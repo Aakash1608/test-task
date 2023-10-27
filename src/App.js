@@ -62,7 +62,7 @@ function App() {
       <br/>
       <br/>
 
-      <label>College:
+      <label>Colleage:
       <input 
         type="text" 
         name="college" 
