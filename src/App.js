@@ -90,7 +90,13 @@ function App() {
         <div className='fifth'>
           <label for="degree" className='degree'>Degree<span className="required"></span>:
             <br/>
-            <select id="degree" name="degree" required className='sel seldegree'>
+            <select 
+              id="degree" 
+              name="degree"  
+              value={inputs.degree|| ""} 
+              onChange={handleChange}
+              required 
+              className='sel seldegree'>
               <option value="" disabled selected></option>
               <option value="B.tech.">B.tech.</option>
               <option value="M.tech">M.tech</option>
@@ -144,13 +150,19 @@ function App() {
          
 
         <label for="how" className='how'>How did you get to know about Cogni<span className="required"></span>:
-          <select id="how" name="how" required className='sel selhow'>
-          <option value="" disabled selected></option>
-          <option value="Website">Website</option>
-          <option value="Social Media">Social Media</option>
-          <option value="Student Partner">Student Partner</option>
-          <option value="Friends">Friends</option>
-          <option value="Relative">Relative</option>
+          <select 
+            id="how" 
+            name="how" 
+            required  
+            className='sel selhow'
+            value={inputs.how|| ""} 
+            onChange={handleChange}>
+            <option value="" disabled selected></option>
+            <option value="Website">Website</option>
+            <option value="Social Media">Social Media</option>
+            <option value="Student Partner">Student Partner</option>
+            <option value="Friends">Friends</option>
+            <option value="Relative">Relative</option>
           </select> 
         </label>
         
